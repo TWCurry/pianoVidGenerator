@@ -9,16 +9,11 @@ def convertToWav(initFileType, fileLoc, outputFileLoc):
     else:
         print(f"Unsupported input file format '{initFileType}'")
         sys.exit(1)
-    convertWavToMidi(outputFileLoc)
-    # removeWavFile()
-    
+    # removeWavFile()s
 
 def convertM4aToWav(fileLoc):
     audio = AudioSegment.from_file(fileLoc, "m4a")
     audio.export(wavFileName, format="wav")
-
-def convertWavToMidi(outputFileLoc):
-    print 
 
 def removeWavFile():
     os.remove(wavFileName)

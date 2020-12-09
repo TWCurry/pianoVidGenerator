@@ -1,5 +1,5 @@
 import sys
-from convertToMidi import convertToWav, convertWavToMidi
+from convertToWav import convertToWav, convertWavToMidi
 
 def main():
     # Args
