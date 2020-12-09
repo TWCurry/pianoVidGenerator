@@ -7,9 +7,10 @@ def convertToWav(initFileType, fileLoc, outputFileLoc):
     if initFileType == "m4a":
         convertM4aToWav(fileLoc)
     else:
-        raise NotImplementedError
+        print(f"Unsupported input file format '{initFileType}'")
+        sys.exit(1)
     convertWavToMidi(outputFileLoc)
-    removeWavFile()
+    # removeWavFile()
     
 
 def convertM4aToWav(fileLoc):

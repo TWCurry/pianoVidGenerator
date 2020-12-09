@@ -1,5 +1,5 @@
 import sys
-from convertToMidi import convertWavToMidi
+from convertToMidi import convertToWav, convertWavToMidi
 
 def main():
     # Args
@@ -10,7 +10,7 @@ def main():
         print(f"Invalid parameters: {e}")
         sys.exit(1)
     
-    convertWavToMidi(fileType, inputFile, "temp.mid")
+    convertToWav(fileType, inputFile, "temp.mid")
 
 if __name__ == "__main__":
     main()
